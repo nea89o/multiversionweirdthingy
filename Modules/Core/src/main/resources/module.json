@@ -1,0 +1,6 @@
+{
+  "entrypoint": "moe.nea.sky.core.Core",
+  "name": "Core",
+  "identifier": "core",
+  "dependencies": []
+}
