@@ -59,6 +59,7 @@ class PlatformLoader private constructor(val platform: Platform) {
     }
 
     private fun loadModules() {
+        di.register { this }
         info.values.forEach {
             // TODO name from module info
             val clazz = Class.forName("moe.nea.sky.core.Core", true, classLoader)
