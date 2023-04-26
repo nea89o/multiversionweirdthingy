@@ -1,6 +1,5 @@
 plugins {
     idea
-    java
     id("xyz.wagyourtail.unimined")
     kotlin("jvm")
 }
@@ -29,6 +28,13 @@ dependencies {
 project.afterEvaluate {
     tasks.named("runClient", JavaExec::class) {
         this.javaLauncher.set(javaToolchains.launcherFor(java.toolchain))
+    }
+}
+
+tasks.processResources {
+    inputs.property("version", version)
+    filesMatching("mcmod.info") {
+        expand("version" to version)
     }
 }
 

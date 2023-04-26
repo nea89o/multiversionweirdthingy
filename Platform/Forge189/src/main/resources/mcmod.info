@@ -3,7 +3,7 @@
     "modid": "skyneamoe",
     "name": "sky.nea.moe",
     "description": "",
-    "version": "1.0.0",
+    "version": "${version}",
     "mcversion": "1.8.9",
     "url": "",
     "updateUrl": "",

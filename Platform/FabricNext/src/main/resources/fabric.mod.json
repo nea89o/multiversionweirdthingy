@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "nea89o"
+  ],
+  "description": "Sky Nea Moe",
+  "id": "skyneamoe",
+  "name": "Sky Nea Moe",
+  "schemaVersion": 1,
+  "version": "${version}",
+  "depends": {
+    "fabric-language-kotlin": ">=1.9.3+kotlin.1.8.20"
+  },
+  "mixins": [
+    "mixins.skyneamoe.json"
+  ],
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "moe.nea.sky.platform.fabric.FabricEntryPoint"
+      }
+    ]
+  }
+}
