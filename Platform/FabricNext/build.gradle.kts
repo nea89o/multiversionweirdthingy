@@ -18,6 +18,8 @@ dependencies {
     modImplementation("net.fabricmc:fabric-language-kotlin:1.9.3+kotlin.1.8.20")
     modImplementation("net.fabricmc.fabric-api:fabric-command-api-v2:2.2.5+e719b857f4")
     modImplementation("net.fabricmc.fabric-api:fabric-lifecycle-events-v1:2.2.15+5da15ca1f4")
+
+    modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:1.1.2")
 }
 
 tasks.processResources {

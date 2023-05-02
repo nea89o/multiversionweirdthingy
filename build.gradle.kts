@@ -14,6 +14,7 @@ allprojects {
         maven("https://repo.nea.moe/releases")
         maven("https://maven.terraformersmc.com/releases")
         maven("https://maven.fabricmc.net")
+        maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
     }
     extensions.findByType<JavaPluginExtension>()!!.toolchain.languageVersion.set(JavaLanguageVersion.of(8))
     project.afterEvaluate {
